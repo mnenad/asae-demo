@@ -110,7 +110,7 @@ Perform the below steps to build the app locally
 
 ```bash
 cd hello-world
-./mvnw clean
+./mvnw clean install
 ./mvnw spring-boot:run &
 cd ..
 ```
