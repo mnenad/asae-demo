@@ -103,13 +103,14 @@ az configure --defaults \
 
 ## Create App
 ```shell
-az spring app create -n ${APP_NAME}
+az spring app create -n ${APP_NAME} -s ${SPRING_APPS_SERVICE} -g ${RESOURCE_GROUP} --assign-endpoint true
 ```
 ## Test hello-world app locally
 Perform the below steps to build the app locally
 
 ```bash
 cd hello-world
+./mvnw clean
 ./mvnw spring-boot:run &
 cd ..
 ```
