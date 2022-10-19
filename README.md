@@ -136,12 +136,12 @@ Please add /hello at the end of test endpoint to see the greeting message
 
 ## Delete App
 ```shell
-az spring app delete -n ${APP_NAME}
+az spring app delete -n ${APP_NAME} -s ${SPRING_APPS_SERVICE} -g ${RESOURCE_GROUP}
 ```
 
 ## Delete Spring Apps Instance
 ```shell
-az spring delete -n ${SPRING_APPS_SERVICE}
+az spring delete -n ${SPRING_APPS_SERVICE} -g ${RESOURCE_GROUP}
 ```
 
 ## Delete Resource Group
