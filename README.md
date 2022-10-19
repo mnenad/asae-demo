@@ -128,7 +128,7 @@ kill %1
 
 ## Deploy App
 ```shell
-az spring app deploy -n ${APP_NAME} --artifact-path ./jars/demo-0.0.1-SNAPSHOT.jar
+az spring app deploy -n ${APP_NAME} --artifact-path ./jars/demo-0.0.1-SNAPSHOT.jar -s ${SPRING_APPS_SERVICE} -g ${RESOURCE_GROUP}
 ```
 ## Test App
 
